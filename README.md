@@ -48,7 +48,7 @@ flowchart LR
     A -- enqueue --> Q
     Q -- consume --> K
     K -- SQLAlchemy --> P
-    K -. shares app.services .-> A
+    K -. shares domain code .-> A
 ```
 
 Shared domain code (models, schemas, node services) lives in `api/app/` and is imported directly by the
