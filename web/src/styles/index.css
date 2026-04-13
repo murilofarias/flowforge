@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  background-color: #fdfaf4;
+}
+
+.node-card {
+  @apply rounded-2xl bg-white shadow-card border px-4 py-3 min-w-[180px];
+  border-color: rgba(40, 38, 60, 0.06);
+  transition: box-shadow 120ms ease, transform 120ms ease;
+}
+.node-card:hover { @apply shadow-pop; transform: translateY(-1px); }
+
+.node-cat-trigger   { @apply bg-trigger-50;   border-color: #b5e2c7; }
+.node-cat-action    { @apply bg-action-50;    border-color: #b9d0f2; }
+.node-cat-transform { @apply bg-transform-50; border-color: #d0bef0; }
+.node-cat-logic     { @apply bg-logic-50;     border-color: #ecd48f; }
+.node-cat-ai        { @apply bg-ai-50;        border-color: #f2bfd4; }
+
+.pill {
+  @apply inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-xs font-medium;
+}
+
+.react-flow__edge-path {
+  stroke-dasharray: 6 4;
+  animation: dashmove 1.2s linear infinite;
+}
+@keyframes dashmove { to { stroke-dashoffset: -20; } }
+
+.grid-bg {
+  background-image:
+    radial-gradient(rgba(40,38,60,.08) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
