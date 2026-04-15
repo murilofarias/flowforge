@@ -1,7 +1,7 @@
 # FlowForge
 
 <p align="center">
-  <strong>Visual workflow automation for modern B2B SaaS — drag, drop, automate.</strong>
+  <strong>Visual workflow builder for internal automation — wire triggers to actions (HTTP, CRM updates, Slack, AI calls) without writing code.</strong>
 </p>
 
 <p align="center">
